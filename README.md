@@ -18,7 +18,7 @@ This project uses Docker and Docker Compose to run PostgreSQL using the `postgre
 Run the database with one command:
 
 ```bash
-docker-compose up -d
+docker-compose up -d && docker-compose exec postgres psql -U postgres -d bithippie_db -P expanded=on
 ```
 
 This will:
@@ -27,6 +27,7 @@ This will:
 - create and start the PostgreSQL container;
 - initialize the configured database;
 - expose PostgreSQL on `localhost:5432`.
+- run both migrations files
 
 ### Verify the container
 
@@ -45,6 +46,8 @@ docker-compose exec postgres psql -U postgres -d bithippie_db
 ```
 
 Connection settings:
+
+yeah, I know that this should be in the .env
 
 ```text
 Host: localhost
