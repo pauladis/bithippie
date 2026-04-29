@@ -6,7 +6,7 @@ The goal of this design is to replace spreadsheet-based tracking with a relation
 
 ## How to Run
 
-This project uses Docker and Docker Compose to run PostgreSQL using the `postgres:15-alpine` image. The database setup is documented in `DOCKER.md`.
+This project uses Docker and Docker Compose to run PostgreSQL using the `postgres:15-alpine` image
 
 ### Prerequisites
 
